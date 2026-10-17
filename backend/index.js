@@ -5,7 +5,7 @@ import { errorHandler } from "./src/middleware/error-handler.js";
 import cors from "cors";
 
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
